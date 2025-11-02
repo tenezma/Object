@@ -12,6 +12,19 @@ public class Product {
         this.price = price;
         this.category = category;
     }
+    public int getId(){
+        return this.id;
+    }
+    public String GetName(){
+        return this.name;
+    }
+    public int getPrice(){
+        return this.price;
+    }
+
+    public String getCategory() {
+        return category;
+    }
 
     @Override
     public String toString() {
@@ -29,4 +42,3 @@ public class Product {
         return id == product.id && Objects.equals(category, product.category);
     }
 }
-
